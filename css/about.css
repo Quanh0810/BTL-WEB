@@ -1,0 +1,157 @@
+
+/*----------------ABOUT PAGE----------------*/
+.banner-abt-wrap {
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	height: 100%;
+	margin: 0;
+}
+.banner-abt-wrap .img {
+	height: auto;
+	margin: 0;
+	background-size: cover;
+	max-width: 100%;
+}
+.banner-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding: 60px;
+}
+.banner-content h1 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 800;
+	margin-top: 16px;
+}
+.introduce {
+	padding: 1em 1.5em;
+	background: #fff;
+	margin: -4em 0 2em 0;
+	position: relative;
+}
+
+.view-box, .duty-box, .introduce-box, .partner-box {
+	margin-top: 2em;
+}
+.introduce .reason .reason-item {
+	border: 2.5px solid #bd945f;
+}
+.introduce .duty-box .title{
+	text-transform: uppercase;
+	color: #bd945f;
+	font-size: 1.2rem !important;
+	margin: 0 0 .5rem 0 !important;
+	font-weight: bold;
+	
+}
+.introduce .partner-box .title, .cont-box .title {
+	text-transform: uppercase;
+	color: #bd945f;
+	font-size: 1.3rem !important;
+	margin: 0 0 .5rem 0 !important;
+	font-family: "Gotham-Ultra";
+}
+.introduce .reason-item .content p,
+.introduce .content p {
+	font-size: 1em;
+	margin-bottom: 0;
+	font-weight: bold;
+	
+}
+.introduce .partner-box .desc {
+	text-align: left;
+	color: #2c2e53;
+}
+.introduce p {
+	line-height: 24px;
+	font-size: 1em;
+}
+
+
+
+
+.header-introduce, .header-view, .header-duty {
+	padding: 4px 0;
+	text-align: center;
+	text-transform: uppercase;
+	color: #2c2e53;
+	margin-bottom: 50px;
+	position: relative;
+	
+}
+.header-introduce:before, .header-view:before, .header-duty:before {
+	position: absolute;
+	content: '';
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 160px;
+	border-top: 7px solid #bd945f;
+	
+}
+
+
+.reason-item, .reason-index-item {
+	background: #fff;
+	font-size: 16px;
+	margin-bottom: 2em;
+}
+
+.reason-item .content {
+	padding: 1em;
+}
+.reason-index-item .content {
+	padding: 2em;
+}
+
+.reason-item .content .title, .reason-index-item .content .title {
+	font-size: 1.4em;
+	font-family: Gotham-Ultra;
+	color: #bd945f;
+	margin: 0;
+}
+
+.reason-item .content .desc, .reason-index-item .content .desc {
+	font-size: .8em;
+	margin: 0;
+	color: #565555;
+}
+
+.reason-item img, .reason-index-item img {
+	width: 3.5em;
+}
+
+.reason-item .img, .reason-index-item .img {
+	display: flex;
+	align-items: center;
+	padding: 0 0 0 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

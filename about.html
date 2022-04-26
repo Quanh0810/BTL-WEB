@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./fonts/fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header-nav.css">
+    <link rel="stylesheet" href="./css/about.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <section class="page">
+        <header class="header">
+            <section class="grid">
+                <section class="header-wrap">
+                    <!-- Logo -->
+                    <section class="header__logo">
+                        <a href="index.html" class="logo-link">Logo</a>
+                    </section>
+        
+                    <!-- Search bar -->
+                    <section class="header__search">
+                        <section class="search-wrap">
+                            <input type="text" class="search-input"  id="searchProduct" placeholder="Tìm kiếm sản phẩm">
+                            <button class="search-btn" onclick="searchProduct()">
+                                <i class="search-btn-icon fas fa-search"></i>
+                            </button>
+                        </section>
+                    </section>
+        
+                    <!-- Cart -->
+                    <section class="header__cart">
+                        <section class="cart-wrap">
+                            <a href="cart.html" class="cart-link">
+                                <i class="cart-icon fas fa-shopping-cart"></i>
+                                <small class="cart-notice">0</small>
+                            </a>
+                        </section>
+                    </section>
+                    <label for="menu-checkbox" class="show-menu-btn">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </label>
+                </section>
+            </section>
+        </header>
+        <!-- <nav class="navbar">
+            <input type="checkbox" name="" id="menu-checkbox">
+            <ul class="navbar__menu">
+                <li class="menu-item">
+                    <a href="index.html" class="menu-item-link">Trang chủ</a>
+                </li>
+                <li class="menu-item item-drop">
+                    <a href="#" class="menu-item-link">Sản phẩm</a>
+                    <ul class="menu-drop">
+                        <a href="brand.html" id="Dell">Dell</a>
+                        <a href="brand.html" id="Asus">Asus</a>
+                        <a href="brand.html" id="HP">HP</a>
+                        <a href="brand.html" id="MSI">MSI</a>
+                        <a href="brand.html" id="Lenovo">Lenovo</a>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-active">
+                    <a href="lienhe.html" class="menu-item-link">Liên hệ</a>
+                </li>
+                <li class="menu-item" id="btnProfile">
+                    <a href="about.html" class="menu-item-link">Giới thiệu</a>
+                </li>
+                <li class="menu-item" id="btnDangnhap">
+                    <a href="form.html" class="menu-item-link">Đăng nhập</a>
+                </li>
+                <li class="menu-item" id="btnLogout" onclick="logout()" style="display: none;">
+                    <a href="index.html" class="menu-item-link">Đăng xuất</a>
+                </li>
+                <label for="menu-checkbox" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                </label>
+            </ul>
+        </nav> -->
+
+        <!-- BANNER -->
+		<div class="banner-abt-wrap">
+			<div class="img">
+				<img src="./img/banner.jpg" alt="#">
+			</div>
+			<div class="banner-content">
+				<h1 class="text-center">Giới thiệu</h1>
+			</div>
+		</div>
+
+		<!-- CONTENT -->
+		<div class="container">
+			<div class="introduce">
+				<div class="introduce-box">
+					<h2 class="header-introduce"> Thành lập &amp; phát triển</h2>
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="img mb-4">
+								<img src="./img/aboutus.jpg" alt="Thành lâp &amp; phát triển" class="img-fluid w-100">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="content text-justify">
+								<p>LOGO là trang web thuộc Công ty Cổ phần Máy tính Hà Nội, là một trong những doanh nghiệp tiên phong 
+									trong lĩnh vực Công nghệ thông tin tại Hà Nội. Với tầm nhìn dài hạn, LOGO tập trung đầu tư vào lĩnh vực 
+									Công nghệ thông tin. Trên tinh thần phát triển bền vững và chuyên nghiệp, LOGO được cơ cấu với các sản 
+									phẩm kinh doanh chính gồm: Laptop & Phụ kiện, Máy tính văn phòng, Máy tính chơi Game, Máy chủ, 
+									Máy trạm, Linh kiện máy tính, Monitor – Màn hình,...</p>
+
+								
+
+								<p>&nbsp;</p>
+
+								<p>&nbsp;</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="view-box px-0 px-md-4">
+					<h2 class="header-view"> thành tựu </h2>
+					<div class="img">
+						<img src="./img/thanh-tuu.jpg" alt="tầm nhìn" class="w-100">
+					</div>
+					<div class="content text-justify mt-3">
+						<p>Qua quá trình hoạt động trong lĩnh vực công nghệ thông tin, Công ty Cổ Phần Máy 
+							Tính Hà Nội đã được rất nhiều các cơ quan đơn vị tín nhiệm, điều đó thể hiện qua 
+							các dự án mà công ty đã tham gia, trúng thầu và thực hiện. Đơn cử như sau: Tư vấn và lắp đặt 
+							hệ thống mạng máy tính cho Viện Khoa học Kỹ thuật Nông nghiệp Việt Nam; Tư vấn và thiết kế, lắp đặt hệ thống 
+							máy tính, máy in và mạng cho Nhà xuất bản Phụ nữ Hà Nội; Cung cấp và lắp đặt hệ thống mạng cho Trường Đại Học Công nghệ – ĐHQGHN; 
+							Cung cấp máy tính và thiết bị mạng cho Tổng Công ty Viễn thông Quân Đội; Cung cấp máy tính cho dự án Đào tạo Giáo viên THCS – Bộ Giáo dục và Đào tạo...</p>
+
+					</div>
+				</div>
+				<div class="duty-box">
+					<h2 class="header-duty"> sinh viên </h2>
+					<div class="row reason">
+						<div class="col-lg-6">
+							<div class="reason-item d-flex">
+								<div class="img">
+									<img src="./img/sv.jpg" alt="Với xã hội">
+								</div>
+								<div class="content">
+									<h3 class="title"> Họ và tên </h3>
+									<p class="desc">
+									</p><p>Nguyễn Quỳnh Anh</p>
+
+									<p></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="reason-item d-flex">
+								<div class="img">
+									<img src="./img/sv.jpg" alt="Với nhân viên">
+								</div>
+								<div class="content">
+									<h3 class="title"> Mã sinh viên </h3>
+									<p class="desc">
+									</p><p>11190337</p>
+
+									<p></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="reason-item d-flex">
+								<div class="img">
+									<img src="./img/sv.jpg" alt="Với đối tác">
+								</div>
+								<div class="content">
+									<h3 class="title"> Học phần </h3>
+									<p class="desc">
+									</p><p>Thiết kế và Lập trình WEB</p>
+
+									<p></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="reason-item d-flex">
+								<div class="img">
+									<img src="./img/sv.jpg" alt="Với thị trường">
+								</div>
+								<div class="content">
+									<h3 class="title"> Giảng viên </h3>
+									<p class="desc">
+									</p><p>Cao Thị Thu Hương</p>
+
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+            <footer class="footer">
+                <section class="grid">
+                    <section class="footer-wrap">
+                        <h3>© 2020 Tập đoàn Logo - Logo Group</h3>
+                        <p>Địa chỉ: Giải Phóng - Hai Bà Trưng - Hà Nội</p>
+                        <p>Điện thoại: 0936xxxxxx</p>
+                        <p>Email: logogrp@gmail.com</p>
+                    </section>
+                </section>
+            </footer>
+        </section>
+
+    </section>
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/bf61fecb7c.js" crossorigin="anonymous"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="./js/current-users.js"></script>
+    <script src="./js/index-control.js"></script>
+</body>
+</html>

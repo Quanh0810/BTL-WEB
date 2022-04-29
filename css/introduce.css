@@ -1,0 +1,15 @@
+.hs-responsive-embed-youtube {
+    position: relative;
+    padding-bottom: 50%; 
+    margin-top: 12px;
+    
+}
+
+.hs-responsive-embed-youtube iframe {
+    position: absolute;
+    width: 100%!important;
+    height: 100%!important;
+}
+
+
+
